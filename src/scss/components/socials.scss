@@ -1,0 +1,17 @@
+.socials {
+  ul {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    @media(max-width: 575px){
+      column-gap: 8px;
+    }
+    li {
+      a {
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+}

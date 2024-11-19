@@ -1,0 +1,95 @@
+<section class="sect pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="mainSliderW pb-4">
+          <div class="swiper mainSlider">
+            <div class="swiper-wrapper">
+
+              <a href="#" class="swiper-slide mainSlide"
+                style="background-image: url('@img/admin/main-slider/image-1.png');">
+                <div class="mainSlideContent text--white">
+
+                  <div class="mainSlideSubtitle text-center mb-3">
+                    Русская Миссия
+                  </div>
+                  <div class="mainSlideTitle text-center mb-2">
+                    ВОЗНИКНОВЕНИЕ<br> РУССКОЙ ЦИВИЛИЗАЦИИ
+                  </div>
+                  <p class="mainSlideDescr text-center">
+                    Сейчас, когда уже третий год продолжается СВО, всё чаще идут речи, что элиты России нужно пополнить
+                    участниками боевых действий, что они сформируют новую прослойку лидеров.
+                  </p>
+                </div>
+              </a>
+
+              <a href="#" class="swiper-slide mainSlide"
+                style="background-image: url('@img/admin/main-slider/image-2.png');">
+                <div class="mainSlideContent text--white">
+
+                  <div class="mainSlideSubtitle text-center mb-3">
+                    Статьи
+                  </div>
+                  <div class="mainSlideTitle text-center mb-2">
+                    ПОВОРОТ НА ВОСТОК
+                  </div>
+                  <p class="mainSlideDescr text-center">
+                    Сейчас, когда уже третий год продолжается СВО, всё чаще идут речи, что элиты России нужно пополнить
+                    участниками боевых действий, что они сформируют новую прослойку лидеров.
+                  </p>
+                </div>
+              </a>
+
+              <a href="#" class="swiper-slide mainSlide"
+                style="background-image: url('@img/admin/main-slider/image-3.png');">
+                <div class="mainSlideContent text--white">
+
+                  <div class="mainSlideSubtitle text-center mb-3">
+                    Статьи
+                  </div>
+                  <div class="mainSlideTitle text-center mb-2">
+                    ЧТО НЕ ТАК С «ЛЮДЬМИ ЕВРОПЕЙСКОЙ КУЛЬТУРЫ»
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <div class="pagination">
+
+            </div>
+          </div>
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-t-green border-t-xl-none pt-0 pt-xl-4 mb-4">
+          @@include('../news/card-1.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-t-green pt-4 mb-4">
+          @@include('../news/card-2.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-t-green pt-4 mb-4">
+          @@include('../news/card-3.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-t-green pt-4 mb-4">
+          @@include('../news/card-4.html',{})
+        </div>
+
+        <div class="paginationW mt-5">
+          @@include('../pagination.html',{})
+        </div>
+
+      </div>
+      <div class="col-lg-4 mt-5 mt-xl-0">
+        <h2 class="h2 fw-normal mb-3 font-segoe">
+          Самое читаемое
+        </h2>
+        @@include('../news/card-sm-1.html',{})
+        @@include('../news/card-sm-2.html',{})
+        @@include('../news/card-sm-3.html',{})
+        @@include('../news/card-sm-4.html',{})
+        @@include('../news/card-sm-2.html',{})
+        @@include('../news/card-sm-3.html',{})
+        @@include('../news/card-sm-4.html',{})
+        <a href="#" class="archiveMore">Больше новостей</a>
+      </div>
+    </div>
+  </div>
+</section>

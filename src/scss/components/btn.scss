@@ -1,0 +1,89 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear;
+  column-gap: 10px;
+  height: 37px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: var(--font-segoe);
+  font-size: 15px;
+  line-height: 20px;
+
+  &--lg {
+    height: 65px;
+    @media(max-width: 991px){
+      height: 50px;
+    }
+  }
+  &--white {
+    background-color: #fff;
+  }
+  &--green {
+    background-color: var(--green);
+    color: #fff;
+    &:hover {
+      background-color: #104F58;
+    }
+  }
+}
+.newsCardMore{
+  min-width: 180px;
+}
+.videoBtn {
+  width: 152px;
+  height: 152px;
+  background-color: #118595;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  @media(max-width: 1400px){
+    width: 65px;
+    height: 65px;
+  }
+  img {
+    @media(max-width: 1400px){
+      width: 24px;
+      position: relative;
+      left: 5px;
+    }
+  }
+}
+.searchBtnAction {
+  display: none;
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  flex-shrink: 0;
+  img {
+    width: 20px;
+  }
+  
+  @media(max-width: 1559px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.searchBtnClose {
+  margin-left: 5px;
+  width: 50px;
+  height: 50px;  
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

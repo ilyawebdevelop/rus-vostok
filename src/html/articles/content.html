@@ -1,0 +1,53 @@
+<section class="sect pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="breadcrumbs d-flex align-items-center flex-wrap gap-1 mb-3 font-segoe">
+          <a href="#">Главная</a>
+          <span class="sep">/</span>        
+          <span>Новости Сибири</span>
+        </div>
+     
+      </div>
+    </div>
+ 
+    <div class="row">
+    
+      <div class="col-lg-8">
+        <h1 class="h1 font-ricordi pageTitle mb-4 text-uppercase">
+          Новости Сибири
+        </h1>
+        <div class="d-flex newsCard newsCard--lg border-b-green pb-4 mb-4">
+          @@include('../news/card-1.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-b-green pb-4 mb-4">
+          @@include('../news/card-2.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg border-b-green pb-4 mb-4">
+          @@include('../news/card-3.html',{})
+        </div>
+        <div class="d-flex newsCard newsCard--lg pb-0 pb-lg-4 mb-0 mb-lg-4">
+          @@include('../news/card-4.html',{})
+        </div>
+
+        <div class="paginationW mt-5">
+          @@include('../pagination-center.html',{})
+        </div>
+
+      </div>
+      <div class="col-lg-4 mt-5 mt-lg-0">
+        <h2 class="h2 fw-normal mb-3 font-segoe">
+          Новости Сибири
+        </h2>
+        @@include('../news/card-sm-1.html',{})
+        @@include('../news/card-sm-2.html',{})
+        @@include('../news/card-sm-3.html',{})
+        @@include('../news/card-sm-4.html',{})
+        @@include('../news/card-sm-2.html',{})
+        @@include('../news/card-sm-3.html',{})
+        @@include('../news/card-sm-4.html',{})
+        <a href="#" class="archiveMore">Больше новостей</a>
+      </div>
+    </div>
+  </div>
+</section>

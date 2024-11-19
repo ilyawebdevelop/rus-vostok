@@ -1,0 +1,96 @@
+// modal
+.modal {
+  display: none;
+  width: 360px;
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  height: fit-content;
+
+  &Descr {
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-segoe);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 27px;
+  }
+
+  .f-button {
+    right: 5px;
+    top: 5px;
+    border-top-right-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    right: unset;
+    left: 5px;
+
+    &:hover {
+      background-color: transparent;
+      color: #fff;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+    &:focus-visible {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+
+    svg {
+      stroke-width: 2px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}
+
+.fancybox__content {
+  color: #1E1E1E;
+  border-radius: 0;
+  position: relative;
+  height: fit-content;
+}
+
+.fancybox__backdrop {
+  background: rgba($color: #1E1E1E, $alpha: .62);
+}
+
+#modalLogin {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modalLink {
+  color: #FFF;
+  text-align: center;
+  font-family: var(--font-segoe);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 135%;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: 3px;
+  text-align: center;
+  display: block;
+  &:hover {
+    text-decoration: underline;
+    opacity: .85;
+  }
+}
+.has-iframe {
+  .fancybox__content {
+    padding: 0;
+  }
+}

@@ -1,0 +1,27 @@
+// Footer
+.footer {
+  background-color: #003B4B;
+  padding-top: 8px;
+  @media(max-width: 991px){
+    background-color: transparent;
+  }
+  &Mail {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    transition: border-color .2s linear;
+    @media(max-width: 991px){
+      color: var(--green);
+    }
+    @media(max-width: 575px){
+      font-size: 15px;
+    }
+    &:hover {
+      border-color: #fff;
+    }
+  }
+  &Logo {
+    &:hover {
+      opacity: .8;
+    }
+  }
+}

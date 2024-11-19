@@ -1,0 +1,63 @@
+.projects {
+  &Card {
+    min-height: 607px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 36px 36px 40px;
+    position: relative;
+    @media(max-width: 1559px){
+      min-height: 450px;
+    }
+    @media(max-width: 991px){
+      padding: 14px 14px 16px;
+    }
+    @media(max-width: 767px){
+      min-height: 350px;
+    }
+    @media(max-width: 575px){
+      min-height: 65vw;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+      transition: opacity .2s linear;
+    }
+
+    &:hover {
+      &:before {
+        opacity: .5;
+      }
+    }
+
+    &Title {
+      color: #FFF;
+      font-family: "TT Ricordi Allegria Trial Regular";
+      font-size: 48px;
+      line-height: 64px;
+      position: relative;
+      z-index: 1;
+      @media(max-width: 1559px){
+        font-size: 34px;
+        line-height: 42px;
+      }
+      @media(max-width: 991px){
+        font-size: 20px;
+        line-height: 27px;
+      }
+      @media(max-width: 365px){
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+  }
+}
