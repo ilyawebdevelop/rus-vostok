@@ -431,6 +431,9 @@ h3,
 .searchCard {
   &.newsCard--lg {
     .newsCardTitle {
+      &:hover {
+        color: var(--green);
+      }
       @media(max-width: 991px){
         color: var(--black);
         font-weight: 700;
