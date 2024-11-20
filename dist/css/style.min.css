@@ -15011,6 +15011,7 @@ h3,
   align-items: center;
   justify-content: center;
   color: #fff;
+  padding-right: 40px;
 }
 .searchPageW input::placeholder {
   color: #fff;
