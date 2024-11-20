@@ -16075,6 +16075,12 @@ h3,
 .footerMail:hover {
   border-color: #fff;
 }
+.footerLogo {
+  align-items: center;
+}
+.footerLogo img {
+  height: fit-content;
+}
 .footerLogo:hover {
   opacity: 0.8;
 }
