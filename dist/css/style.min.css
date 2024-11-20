@@ -15235,7 +15235,12 @@ h3,
   color: #1E1E1E;
   border-radius: 0;
   position: relative;
-  height: fit-content !important;
+  height: fit-content;
+}
+@media (max-width: 991px) {
+  .fancybox__content {
+    height: fit-content !important;
+  }
 }
 
 .fancybox__backdrop {
