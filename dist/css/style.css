@@ -14700,8 +14700,10 @@ h3,
   }
 }
 
-.searchCard.newsCard--lg .newsCardTitle:hover {
-  color: var(--green);
+@media (max-width: 991px) {
+  .searchCard.newsCard--lg .newsCardTitle:hover {
+    color: var(--green);
+  }
 }
 @media (max-width: 991px) {
   .searchCard.newsCard--lg .newsCardTitle {
