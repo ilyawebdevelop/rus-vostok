@@ -16053,6 +16053,7 @@ h3,
 .footer {
   background-color: #003B4B;
   padding-top: 8px;
+  padding-bottom: 20px;
 }
 @media (max-width: 991px) {
   .footer {
@@ -16085,4 +16086,33 @@ h3,
 }
 .footerLogo:hover {
   opacity: 0.8;
+}
+.footer .copyright {
+  color: #fff;
+  font-size: 14px;
+}
+@media (max-width: 991px) {
+  .footer .copyright {
+    color: var(--green);
+    text-align: center;
+  }
+}
+.footerDevelop {
+  color: #fff;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  margin-left: auto;
+  transition: border-color 0.2s linear;
+}
+@media (max-width: 991px) {
+  .footerDevelop {
+    color: var(--green);
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+}
+.footerDevelop:hover {
+  border-color: #fff;
 }

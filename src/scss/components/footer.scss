@@ -2,30 +2,66 @@
 .footer {
   background-color: #003B4B;
   padding-top: 8px;
-  @media(max-width: 991px){
+  padding-bottom: 20px;
+
+  @media(max-width: 991px) {
     background-color: transparent;
   }
+
   &Mail {
     color: #fff;
     border-bottom: 1px solid transparent;
     transition: border-color .2s linear;
-    @media(max-width: 991px){
+
+    @media(max-width: 991px) {
       color: var(--green);
     }
-    @media(max-width: 575px){
+
+    @media(max-width: 575px) {
       font-size: 15px;
     }
+
     &:hover {
       border-color: #fff;
     }
   }
+
   &Logo {
     align-items: center;
+
     img {
       height: fit-content;
     }
+
     &:hover {
       opacity: .8;
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    font-size: 14px;
+    @media(max-width: 991px){
+      color: var(--green);
+      text-align: center;
+    }
+  }
+
+  &Develop {
+    color: #fff;
+    border-bottom: 1px solid transparent;
+    width: fit-content;
+    margin-left: auto;
+    transition: border-color .2s linear;
+    @media(max-width: 991px){
+      color: var(--green);
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 10px;
+    }
+    &:hover {
+      border-color: #fff;
     }
   }
 }
