@@ -150,14 +150,13 @@ section {
 }
 
 .pageTitle.h1 {
-  font-size: 47px;
-  line-height: 57px;
-  letter-spacing: 19.2px;
+  font-size: 38px;
+  line-height: 44px;
+  // letter-spacing: 6.2px;
   color: var(--green);
   @media(max-width: 991px){
     font-size: 24px;
-    line-height: 27px;
-    letter-spacing: 5px;
+    line-height: 27px;   
   }
 }
 
