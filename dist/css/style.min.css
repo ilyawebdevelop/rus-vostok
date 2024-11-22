@@ -15494,7 +15494,6 @@ h3,
   }
 }
 .introLogo {
-  max-height: 52px;
   margin-bottom: 52px;
 }
 @media (max-width: 991px) {
@@ -15555,14 +15554,18 @@ h3,
     display: none;
   }
 }
+.introR .introLogo {
+  margin-left: auto;
+}
 .introImg {
   width: 315px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 35px;
+  margin-right: auto;
   margin-left: 30px;
   -o-object-fit: contain;
   object-fit: contain;
+  object-position: bottom;
 }
 @media (max-width: 767px) {
   .introImg {

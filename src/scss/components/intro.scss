@@ -17,7 +17,7 @@
     }
   }
   &Logo {
-    max-height: 52px;
+    // max-height: 52px;
     margin-bottom: 52px;
     @media(max-width: 991px){
       margin-bottom: 20px;
@@ -63,15 +63,19 @@
     @media(max-width: 991px){
       display: none;
     }
+    .introLogo {
+      margin-left: auto;
+    }
   }
   &Img {
     width: 315px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
-    margin-right: 35px;
+    margin-right: auto;
     margin-left: 30px;
     -o-object-fit: contain;
        object-fit: contain;
+       object-position: bottom;
     @media(max-width: 767px){
       width: 189px;
       height: -webkit-fit-content;
